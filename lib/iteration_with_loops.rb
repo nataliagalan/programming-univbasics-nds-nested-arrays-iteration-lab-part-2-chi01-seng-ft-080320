@@ -6,12 +6,12 @@ def find_min_in_nested_arrays(src)
   row_index = 0
   while row_index < src.count do
     element_index = 0
-    lowest_element = i
+    lowest_element = 70
     while element_index < src[row_index].count do
 
       # Array at row_index
       # Element of the inner array at element_index
-      # If the length of the current element is less than the length of longest_string_element
+      # If the length of the current element is more than the length of longest_string_element
       # Set longest_string_element to the current element
       if src[row_index][element_index] < lowest_element
         lowest_element = src[row_index][element_index]
